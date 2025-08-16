@@ -1,0 +1,630 @@
+/* Mobile styles */
+@media (min-width: 320px) and (max-width: 768px) {
+    /* Stack layout instead of horizontal */
+    .navbar-container {
+      flex-wrap: wrap;
+      padding: 10px 15px;
+      margin-top: -50px;
+    }
+  
+    /* Show the ☰ icon */
+    .menu-toggle {
+      display: block;
+      font-size: 25px;
+      color: #fff;
+      cursor: pointer;
+    }
+  
+    /* Hide the links by default on mobile */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      /* gap: 15px; */
+      margin-top: 10px;
+    }
+  
+    /* Make button full width under links */
+    .btn {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    /* When menu is active (we'll add a class with JS) */
+    .nav-links.active {
+      display: flex;
+    }
+  }
+
+
+  @media (min-width: 320px) and (max-width: 768px) {
+
+    .hero-title {
+      font-size: 24px; /* smaller heading for mobile */
+      line-height: 1.3;
+      margin-bottom: 15px;
+    }
+  
+    .hero-subtitle {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+  
+    .availability-indicator {
+      font-size: 12px;
+      padding: 6px 12px;
+      margin-bottom: 20px;
+    }
+  
+    .hero-button {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  
+    .trust-section {
+      margin-top: 30px;
+    }
+  
+    .star-rating {
+      font-size: 14px;
+    }
+  
+    .trust-text {
+      font-size: 12px;
+    }
+  
+    /* Move arrow link closer in mobile */
+    .our-work-link {
+      position: static; /* no absolute positioning */
+      margin-top: 25px;
+    }
+  }
+  /* Responsive adjustments */
+@media (max-width: 960px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .info-panel {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    .main-wrapper {
+        padding: 20px;
+    }
+    .info-panel h1 {
+        font-size: 2rem;
+    }
+    .info-panel p {
+        font-size: 0.9rem;
+    }
+    .tag-list li {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
+/* Mobile only */
+@media (max-width: 768px) {
+    .logos-wrapper {
+      overflow: hidden; /* hides the overflow */
+      width: 100%;
+  
+    }
+  
+    .logos {
+      display: flex;
+      gap: 20px;
+      animation: scroll-logos 20s linear infinite;
+    }
+  
+    .logos img {
+      height: 40px;
+      flex-shrink: 0; /* prevents logos from squishing */
+    }
+}
+@keyframes scroll-logos {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%); /* move halfway if duplicated */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .benefits,
+    .benefit {
+      flex-direction: column; /* stack items vertically */
+      gap: 40px; /* smaller gap for mobile */
+      align-items: center; /* center items horizontally */
+    }
+  
+    .benefits div,
+    .benefit div {
+      width: 100%; /* make each item take full width */
+      max-width: 350px; /* optional: limit width for better look */
+    }
+  
+    .benefits h1,
+    .benefit h1 {
+      font-size: 18px; /* smaller heading */
+    }
+  
+    .benefits p,
+    .benefit p {
+      font-size: 16px; /* smaller paragraph */
+    }
+  }
+  @media (max-width: 768px) {
+    .content-box {
+      flex-direction: column; /* stack vertically */
+      align-items: center;
+      gap: 30px; /* spacing between cards */
+      padding: 0 15px;
+    }
+  
+    .frame {
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 20px; /* extra spacing */
+    }
+  
+    .card-title {
+      font-size: 18px;
+    }
+  
+    .card-description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  @media (min-width: 600px) {
+    .marquee-track {
+      gap: 20px;
+      animation-duration: 25s;
+    }
+  
+    .testimonial-card {
+      min-width: 320px;
+      max-width: 320px;
+      padding: 20px;
+      font-size: 15px;
+    }
+  
+    .testimonial-text {
+      font-size: 15px;
+    }
+  
+    .stars {
+      font-size: 17px;
+    }
+  
+    .author-img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  
+  /* Medium tablets / small desktops */
+  @media (min-width: 900px) {
+    .marquee-track {
+      gap: 24px;
+      animation-duration: 30s;
+    }
+  
+    .testimonial-card {
+      min-width: 360px;
+      max-width: 360px;
+      padding: 22px;
+      font-size: 16px;
+    }
+  
+    .testimonial-text {
+      font-size: 16px;
+    }
+  
+    .stars {
+      font-size: 18px;
+    }
+  
+    .author-img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1200px) {
+    .marquee-track {
+      gap: 32px;
+      animation-duration: 35s;
+    }
+  
+    .testimonial-card {
+      min-width: 400px;
+      max-width: 400px;
+      padding: 24px;
+      font-size: 16px;
+    }
+  
+    .testimonial-text {
+      font-size: 16px;
+    }
+  
+    .stars {
+      font-size: 18px;
+    }
+  
+    .author-img {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    .our-vision h1 {
+      font-size: 32px;
+    }
+  
+    .benefits {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+  
+    .benefits div {
+      width: 45%;
+    }
+  
+    .benefits img {
+      width: 100px;
+    }
+  
+    .benefits h1 {
+      font-size: 20px;
+    }
+  
+    .benefits p {
+      font-size: 15px;
+    }
+  
+    .partner h1 {
+      font-size: 24px;
+    }
+  
+    .tags-container .tag {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    .faq p {
+      font-size: 28px;
+    }
+  }
+  
+  /* Large screens (desktop) */
+  @media (min-width: 900px) {
+    .our-vision h1 {
+      font-size: 40px;
+    }
+  
+    .benefits div {
+      width: 30%;
+    }
+  
+    .benefits img {
+      width: 120px;
+    }
+  
+    .benefits h1 {
+      font-size: 24px;
+    }
+  
+    .benefits p {
+      font-size: 16px;
+    }
+  
+    .partner h1 {
+      font-size: 30px;
+    }
+  
+    .tags-container .tag {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+    }
+  
+    .faq p {
+      font-size: 32px;
+    }
+  }
+  
+  /* Extra large screens */
+  @media (min-width: 1200px) {
+    .our-design {
+      padding: 3rem 4rem;
+    }
+  
+    .benefits div {
+      width: 28%;
+    }
+  }
+  @media (min-width: 600px) {
+    .footer-top {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .footer-links {
+      flex-direction: row;
+      gap: 3rem;
+      text-align: left;
+    }
+  
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .footer-logo {
+      justify-content: flex-start;
+    }
+  
+    .footer-guarantee {
+      justify-content: flex-start;
+    }
+  }
+  
+  /* Large screens (desktop) */
+  @media (min-width: 900px) {
+    .footer {
+      max-width: 1200px;
+      padding: 2rem 4rem;
+      margin: 4rem auto 0 auto;
+    }
+  
+    .footer-logo {
+      font-size: 1.5rem;
+    }
+  
+    .footer-description {
+      font-size: 1rem;
+    }
+  
+    .footer-guarantee {
+      font-size: 0.95rem;
+    }
+  
+    .footer-links h4 {
+      font-size: 1.1rem;
+    }
+  
+    .footer-links a {
+      font-size: 1rem;
+    }
+  
+    .footer-bottom {
+      font-size: 0.85rem;
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    .about-card {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+  
+    .image-container {
+      flex-basis: auto;
+    }
+  
+    .right-content {
+      flex-basis: auto;
+    }
+  
+    .right-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .right-content p {
+      font-size: 0.9rem;
+    }
+  
+    .locations {
+      margin-top: 1rem;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about-card {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+  
+    .left-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .right-content p {
+      font-size: 0.9rem;
+    }
+  
+    .locations {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .guarantee-card {
+      padding: 1.5rem 1rem;
+    }
+  
+    .guarantee-card h2 {
+      font-size: 1rem;
+    }
+  
+    .guarantee-card p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .add-on-card .features-list li svg {
+    color: var(--accent-color);
+  }
+  
+  @media (max-width: 1024px) {
+    .packages-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* --- Responsive Adjustments (Optional but Recommended) --- */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      /* Stack cards vertically on smaller screens */
+      align-items: center;
+      /* Center them when stacked */
+    }
+  
+    .card {
+      max-width: 80%;
+      /* Make cards take more width when stacked */
+      margin-bottom: 20px;
+      /* Add space between stacked cards */
+    }
+  
+  
+  
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      max-width: 95%;
+      /* Even wider on very small screens */
+    }
+  }
+  /* Laptop-specific styles (1024px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    /* Ensure main wrappers don't overflow */
+    body, 
+    .main-wrapper,
+    .our-design,
+    .footer,
+    .marquee-container {
+      overflow-x: hidden;
+      width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      box-sizing: border-box;
+    }
+  
+    /* Benefits section: 3 columns max */
+    .benefits div {
+      width: 32%;
+    }
+  
+    /* Marquee / testimonials */
+    .marquee-container {
+      overflow-x: hidden;
+    }
+  
+    .marquee-track {
+      gap: 28px; /* reasonable spacing */
+    }
+  
+    .testimonial-card {
+      min-width: 340px; /* smaller than large desktop */
+      max-width: 340px;
+    }
+  
+    /* Footer */
+    .footer {
+      padding: 2rem 3rem;
+    }
+  
+    .footer-top {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .footer-links {
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  
+    /* Other horizontal elements (cards, logos) */
+    .cards-container,
+    .logos-wrapper {
+      overflow-x: hidden;
+    }
+  
+    .cards-container .card,
+    .logos img {
+      max-width: 100%;
+      flex-shrink: 0;
+    }
+  }
+  

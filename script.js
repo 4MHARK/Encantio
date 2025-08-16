@@ -21,3 +21,9 @@ document.querySelectorAll('.faq-item').forEach(item => {
         }
     });
 });
+
+
+  document.getElementById('menuToggle').addEventListener('click', function () {
+    document.querySelector('.nav-links').classList.toggle('active');
+  });
+

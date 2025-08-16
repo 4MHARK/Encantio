@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encantio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
     <style>
-        
+
     </style>
 </head>
 
 <body>
     <section class="home">
-        <section class="hero">
+        <section>
             <header class="header">
                 <nav class="navbar-container">
                     <div class="logo">
@@ -21,19 +22,21 @@
                         Encantio
                     </div>
 
+                    <div class="menu-toggle" id="menuToggle">☰</div>
                     <ul class="nav-links">
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#services">Service</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#packages">Pricing</a></li>
                         <li><a href="#">Contact</a></li>
+                        <button class="btn">Book a Free Call</button>
                     </ul>
 
-                    <button class="btn">Book a Free Call</button>
+
                 </nav>
             </header>
         </section>
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <div class="availability-indicator">
                     <span class="dot"></span> <span class="text">Spots available</span>
@@ -54,8 +57,7 @@
                     <p class="trust-text">Trusted by 10+ businesses</p>
                 </div>
                 <div class="our-work-link">
-                    <span class="our-work-text">Our work</span>
-                    <div class="arrow"></div>
+                    <div class="arrow"><img src="img/Image [vectors-wrapper-47].png" alt=""></div>
                 </div>
             </div>
 
@@ -89,7 +91,7 @@
             <div class="cards-container">
                 <div class="card">
                     <div class="card-icon">
-                        <img src="https://via.placeholder.com/40x40/E0B0FF/000000?text=Icon" alt="Icon">
+                        <img src="img/Div [featured-icon].png" alt="Icon">
                     </div>
                     <h3 class="card-title">Your website lacks revenue optimization</h3>
                     <p class="card-description">
@@ -100,7 +102,7 @@
 
                 <div class="card">
                     <div class="card-icon">
-                        <img src="https://via.placeholder.com/40x40/E0B0FF/000000?text=Icon" alt="Icon">
+                        <img src="img/Div [featured-icon-2].png" alt="Icon">
                     </div>
                     <h3 class="card-title">You find it difficult to stand out and build trust</h3>
                     <p class="card-description">
@@ -111,7 +113,7 @@
 
                 <div class="card">
                     <div class="card-icon">
-                        <img src="https://via.placeholder.com/40x40/E0B0FF/000000?text=Icon" alt="Icon">
+                        <img src="img/div.png" alt="Icon">
                     </div>
                     <h3 class="card-title">You are struggling with efficient design solutions</h3>
                     <p class="card-description">
@@ -130,58 +132,130 @@
                 <button>Branding</button>
                 <button> Digital Design</button>
 
-                <div class="source-img">
-                    <img src="img/Div [tab-content].png" alt="">
+                <div class="main-wrapper">
+                    <section class="info-panel">
+                        <h1>Web Design &<br>Development</h1>
+                        <p>Get a reliable and high-converting website that<br>turns visitors into clients.</p>
+                        <ul class="tag-list">
+                            <li>Landing page</li>
+                            <li>Responsive design</li>
+                            <li>Multi-page website</li>
+                            <li class="figma-tag">Figma design</li>
+                            <li class="webflow-tag">Webflow development</li>
+                        </ul>
+                    </section>
+                    <section class="image-showcase">
+                        <div class="screen-mockup">
+                            <img src="img/Div [image-wrapper-3].png" alt="Website Mockup">
+                        </div>
+                    </section>
                 </div>
-                <div class="logos">
-                    <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
-                    <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
-                    <img src="img/Image [logo-icon-wrapper] (2).png" alt="">
-                    <img src="img/Image [logo-icon-wrapper].png" alt="">
-                    <img src="img/Image [logo-icon-wrapper] (2).png" alt="">
-                    <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
-                    <img src="img/Image [logo-icon-wrapper].png" alt="">
-                    <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
-                    <img src="img/Image [logo-icon-wrapper].png" alt="">
-                    <img src="img/Image [logo-icon-wrapper] (2).png" alt="">
-                    <img src="img/Image [logo-icon-wrapper].png" alt="">
+                <div class="logos-wrapper">
+                    <div class="logos">
+                        <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
+                        <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
+                        <img src="img/Image [logo-icon-wrapper] (2).png" alt="">
+                        <img src="img/Image [logo-icon-wrapper].png" alt="">
+                        <img src="img/Image [logo-icon-wrapper] (2).png" alt="">
+                        <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
+                        <img src="img/Image [logo-icon-wrapper].png" alt="">
+                        <img src="img/Image [logo-icon-wrapper] (1).png" alt="">
+                        <img src="img/Image [logo-icon-wrapper].png" alt="">
+                        <img src="img/Image [logo-icon-wrapper] (2).png" alt="">
+
+                    </div>
                 </div>
+
 
             </div>
             <section>
-                <div class="services">
-                    <p>
+                <div class="services" id="services">
+                    <h1>
                         our services
-                    </p>
-                    <h1>Why choose us</h1>
+                    </h1>
+                    <p>Why choose us</p>
                 </div>
-                <div class="benefits">
-                    <div>
-                        <h1>Finicial Design Expertise</h1>
-                        <p>We have an undderstanding of financial<br> concept and we get your design needs</p>
+                         
+                <div class="content-box">
+
+                    <div class="frame">
+                        <div class="widget">
+                            <img src="img/Image [crystal-ball].png" alt="">
+                            <h3 class="card-title">
+                                Financial Design Expertise
+                            </h3>
+                            <p class="card-description">
+                                We Have an Understanding of Financial<br> Concept and We Get Your Design Needs
+                            </p>
+                        </div>
+
                     </div>
-                    <div>
-                        <h1>Finicial Design Expertise</h1>
-                        <p>We have an undderstanding of financial<br> concept and we get your design needs</p>
+
+                    <div class="frame">
+                        <div class="widget">
+                            <img src="img/1.png" alt="">
+                            <h3 class="card-title">
+                             No Hidden Cost
+                            </h3>
+                            <p class="card-description">
+                                Transparency Pricing! No Hidden Fees, Just<br>clear Enchatment
+                            </p>
+                        </div>
+
                     </div>
-                    <div>
-                        <h1>Finicial Design Expertise</h1>
-                        <p>We have an undderstanding of financial<br> concept and we get your design needs</p>
+
+                    <div class="frame">
+                        <div class="widget">
+                            <img src="img/2.png" alt="">
+                            <h3 class="card-title">
+                               Fast Tournaround Times
+                            </h3>
+                            <p class="card-description">
+                              Swift Sourcery! Get Your Designs Quickly<br>And With Updates Every 48 To 72 Hours
+                            </p>
+                        </div>
+
                     </div>
-                </div>
-                <div class="benefit">
-                    <div>
-                        <h1>Finicial Design Expertise</h1>
-                        <p>We have an undderstanding of financial<br> concept and we get your design needs</p>
+                    <div class="frame">
+                        <div class="widget">
+                            <img src="img/3.png" alt="">
+                            <h3 class="card-title">
+                               Wizzard-Level Quality
+                            </h3>
+                            <p class="card-description">
+                              Crafted To Perfection! Designs That<br> Captivate, Build Trust And Convert.
+                            </p>
+                        </div>
+
                     </div>
-                    <div>
-                        <h1>Finicial Design Expertise</h1>
-                        <p>We have an undderstanding of financial<br> concept and we get your design needs</p>
+
+                    <div class="frame">
+                        <div class="widget">
+                            <img src="img/4.png" alt="">
+                            <h3 class="card-title">
+                               Unique And Yours Forever
+                            </h3>
+                            <p class="card-description">
+                              Exclusive Enchantments! Your Designs<br> Are Unique, And You Retain Full Ownership.
+                            </p>
+                        </div>
+
                     </div>
-                    <div>
-                        <h1>Finicial Design Expertise</h1>
-                        <p>We have an undderstanding of financial<br> concept and we get your design needs</p>
+
+                    <div class="frame">
+                        <div class="widget">
+                            <img src="img/5.png" alt="">
+                            <h3 class="card-title">
+                               All-In-One Design Solution
+                            </h3>
+                            <p class="card-description">
+                              We Can Offer A Wide range Of Design<br> Solutions For Your Finace Buisness
+                            </p>
+                        </div>
+
                     </div>
+
+                    
                 </div>
 
 
@@ -201,7 +275,7 @@
                                 their ability to translate abstract ideas into visually appealing and effective
                                 designs.”</p>
                             <div class="author-info">
-                                <img src="jason.jpg" alt="Jason" class="author-img">
+                                <img src="img/60].png" alt="Jason" class="author-img">
                                 <div class="author-details">
                                     <div class="author-name">Jason</div>
                                     <div class="author-title">CEO & Founder @ PackageMyApps</div>
@@ -215,7 +289,7 @@
                             <p class="testimonial-text">“They helped bring our brand to life with brilliant, modern
                                 design work.”</p>
                             <div class="author-info">
-                                <img src="sarah.jpg" alt="Sarah" class="author-img">
+                                <img src="img/img.png" alt="Sarah" class="author-img">
                                 <div class="author-details">
                                     <div class="author-name">Sarah</div>
                                     <div class="author-title">Product Manager @ BrightCo</div>
@@ -229,7 +303,7 @@
                             <p class="testimonial-text">“They helped bring our brand to life with brilliant, modern
                                 design work.”</p>
                             <div class="author-info">
-                                <img src="sarah.jpg" alt="Sarah" class="author-img">
+                                <img src="img/60].png" alt="Sarah" class="author-img">
                                 <div class="author-details">
                                     <div class="author-name">Sarah</div>
                                     <div class="author-title">Product Manager @ BrightCo</div>
@@ -241,7 +315,7 @@
                             <p class="testimonial-text">“They helped bring our brand to life with brilliant, modern
                                 design work.”</p>
                             <div class="author-info">
-                                <img src="sarah.jpg" alt="Sarah" class="author-img">
+                                <img src="img/img2.png" alt="Sarah" class="author-img">
                                 <div class="author-details">
                                     <div class="author-name">Sarah</div>
                                     <div class="author-title">Product Manager @ BrightCo</div>
@@ -260,7 +334,7 @@
 
     <section>
         <div class="container">
-            <div class="package">
+            <div class="package" id="packages">
                 <h3>PACKAGES</h3>
                 <h1>Ready to invest in your company?</h1>
             </div>
@@ -478,7 +552,7 @@
             </div>
         </div>
         <p class="stripe-info">Payment securely Done via Stripe</p>
-        <div class="about-card">
+        <div class="about-card" id="about">
             <div class="image-container">
                 <img src="img/IMG-20240519-WA0031.jpg" alt="Your Image Description">
             </div>
@@ -574,71 +648,135 @@
             </div>
 
             <div class="faq">
-                <p>Faq</p>
-                <h2>Unraveling The Mysteries</h2>
+                <h2>Faq</h2>
+                <p>Unraveling The Mysteries</p>
                 <div class="faq-section">
                     <div class="faq-item">
-                      <div class="faq-question">
-                        <h4>Why is professional branding and web design important for a financial business?</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </div>
-                      <div class="faq-answer">
-                        <p>Inner text for the first FAQ item goes here. You can add more detailed information about the importance of branding and design for financial businesses.</p>
-                      </div>
+                        <div class="faq-question">
+                            <h4>Why is professional branding and web design important for a financial business?</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Inner text for the first FAQ item goes here. You can add more detailed information about
+                                the importance of branding and design for financial businesses.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                      <div class="faq-question">
-                        <h4>How do I get started with your branding and web design services?</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </div>
-                      <div class="faq-answer">
-                        <p>Inner text for the second FAQ item goes here. You can explain the steps clients need to take to begin working with you.</p>
-                      </div>
+                        <div class="faq-question">
+                            <h4>How do I get started with your branding and web design services?</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Inner text for the second FAQ item goes here. You can explain the steps clients need to
+                                take to begin working with you.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                      <div class="faq-question">
-                        <h4>What makes your design services unique for the financial industry?</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </div>
-                      <div class="faq-answer">
-                        <p>Inner text for the third FAQ item goes here. You can highlight your expertise and specific benefits for the financial sector.</p>
-                      </div>
+                        <div class="faq-question">
+                            <h4>What makes your design services unique for the financial industry?</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Inner text for the third FAQ item goes here. You can highlight your expertise and
+                                specific benefits for the financial sector.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                      <div class="faq-question">
-                        <h4>How does the design process work, and what is the typical timeline?</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </div>
-                      <div class="faq-answer">
-                        <p>Inner text for the fourth FAQ item goes here. You can provide a breakdown of your process from consultation to final delivery.</p>
-                      </div>
+                        <div class="faq-question">
+                            <h4>How does the design process work, and what is the typical timeline?</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Inner text for the fourth FAQ item goes here. You can provide a breakdown of your process
+                                from consultation to final delivery.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                      <div class="faq-question">
-                        <h4>Do you offer revisions, and how many are included in the package?</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-                          <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                      </div>
-                      <div class="faq-answer">
-                        <p>Inner text for the fifth FAQ item goes here. You can explain your revision policy for the different packages.</p>
-                      </div>
+                        <div class="faq-question">
+                            <h4>Do you offer revisions, and how many are included in the package?</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Inner text for the fifth FAQ item goes here. You can explain your revision policy for the
+                                different packages.</p>
+                        </div>
                     </div>
-                  </div>
+                </div>
+
             </div>
-            
+            <div class="priority-card">
+                <h2>One Click Away fromBuilding a<br><span>Market Leading Branch</span></h2>
+                <button class="cta-button">Book a Free Call Now</button>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" oke-linecap="round" stroke-linejoin="round"
+                            class="feather fea528+ther-aperture">
+                        </svg>
+                        Encantio
+                    </div>
+                    <p class="footer-description">Encantio is headquartered in Buenos Aires, Argentina.</p>
+                    <div class="footer-guarantee">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-shield">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        100% satisfaction guaranteed, if not your money back.
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Resources</h4>
+                        <a href="#">Recent work</a>
+                        <a href="#">Services</a>
+                        <a href="#">Testimonials</a>
+                    </div>
+                    <div>
+                        <h4>Benefits</h4>
+                        <a href="#">Packages</a>
+                        <a href="#">About</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2024 Encantio. All rights reserved.</span>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
         </div>
 
     </section>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
