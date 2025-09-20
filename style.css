@@ -346,8 +346,8 @@ body {
 }
 
 .card {
-  background-color: #ffffff;
-  /* White background for each card */
+  /* background-color: #ffffff; */
+ color: #fff;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1389,6 +1389,7 @@ ul li {
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   padding: 0 1rem;
+  color: white;
 }
 
 .faq-item.active .faq-answer {
